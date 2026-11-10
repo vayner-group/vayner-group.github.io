@@ -1,0 +1,13 @@
+title: Vayner Group
+description: Vayner Group designs, engineers, and delivers custom websites, e-commerce stores and mobile apps for growing businesses.
+email: contact@example.com   # receives contact form submissions and the header email link
+linkedin: ""                # full LinkedIn company page URL, leave empty to hide
+url: ""                      # e.g. https://www.vaynergroup.com
+baseurl: ""
+locale: en
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

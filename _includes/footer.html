@@ -1,0 +1,29 @@
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="{{ site.title }}">
+      <p class="en" style="font-size:12px">{{ site.title }}</p>
+      <p class="muted">Vayner Group — Engineering Digital Excellence for Global Businesses.</p>
+    </div>
+    <div>
+      <p class="en label">Company</p>
+      <ul class="plain">
+        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/process/' | relative_url }}">How It Works</a></li>
+        <li><a href="{{ '/#why-us' | relative_url }}">Why Us</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="en label">Contact</p>
+      <ul class="plain">
+        <li><a href="{{ '/contact/' | relative_url }}">Start a project</a></li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% if site.linkedin and site.linkedin != '' %}<li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© {{ 'now' | date: '%Y' }} Vayner Group. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,27 @@
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="{{ site.title }}">
+      <p class="en" style="font-size:12px">{{ site.title }}</p>
+      <p class="muted">Connecting businesses with vetted talent.</p>
+    </div>
+    <div>
+      <p class="en label">Company</p>
+      <ul class="plain">
+        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/process/' | relative_url }}">How It Works</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="en label">Network</p>
+      <ul class="plain">
+        <li><a href="{{ '/freelancers/' | relative_url }}">For Freelancers</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© {{ 'now' | date: '%Y' }} Vayner Group. All rights reserved.</p>
+  </div>
+</footer>

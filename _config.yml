@@ -1,0 +1,12 @@
+title: Vayner Group
+description: Vayner Group is a full-service digital and creative agency.
+email: contact@example.com   # receives contact form messages
+url: ""                      # e.g. https://www.vaynergroup.com
+baseurl: ""
+locale: en
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

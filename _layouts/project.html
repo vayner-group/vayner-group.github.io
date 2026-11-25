@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article>
+  <header class="project-hero">
+    <div class="container">
+      <a class="back" href="{{ '/portfolio/' | relative_url }}">← Portfolio</a>
+      <p class="eyebrow">{{ page.category }} · {{ page.year }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+      <dl class="project-meta">
+        {% if page.client %}<div><dt>Client</dt><dd>{{ page.client }}</dd></div>{% endif %}
+        <div><dt>Category</dt><dd>{{ page.category }}</dd></div>
+        <div><dt>Year</dt><dd>{{ page.year }}</dd></div>
+        {% if page.link %}<div><dt>Live</dt><dd><a href="{{ page.link }}" target="_blank" rel="noopener">Visit project ↗</a></dd></div>{% endif %}
+      </dl>
+    </div>
+  </header>
+
+  <div class="container">
+    <img class="project-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+  </div>
+
+  {% if content != '' %}
+  <section class="container narrow prose">
+    {{ content }}
+  </section>
+  {% endif %}
+
+  {% if page.gallery %}
+  <section class="container gallery">
+    {% for img in page.gallery %}
+    <img src="{{ img | relative_url }}" alt="{{ page.title }} screenshot {{ forloop.index }}" loading="lazy">
+    {% endfor %}
+  </section>
+  {% endif %}
+</article>

@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="{{ site.title }}">
+      <p class="muted">Vayner Group — Engineering Digital Excellence for Global Businesses.</p>
+    </div>
+    <div>
+      <p class="label">Navigate</p>
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+        <li><a href="{{ '/terms/' | relative_url }}">Terms &amp; Policies</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">Contact</p>
+      <ul>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a></li>
+        <li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© {{ 'now' | date: '%Y' }} Vayner Group. All rights reserved.</p>
+  </div>
+</footer>

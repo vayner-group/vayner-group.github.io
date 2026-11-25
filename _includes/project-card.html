@@ -1,0 +1,9 @@
+<a class="project-card" href="{{ include.project.url | relative_url }}" data-category="{{ include.project.category }}" data-reveal>
+  <div class="project-thumb">
+    <img src="{{ include.project.cover | relative_url }}" alt="{{ include.project.title }}" loading="lazy">
+  </div>
+  <div class="project-info">
+    <span class="en small">{{ include.project.category }} · {{ include.project.year }}</span>
+    <h3>{{ include.project.title }}</h3>
+  </div>
+</a>

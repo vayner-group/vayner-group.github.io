@@ -5,9 +5,9 @@ baseurl: ""
 locale: en
 
 # Contact details shown across the site
-email: contact@example.com
+email: vayner.gr@gmail.com
 phone: "+1 000 000 0000"
-linkedin: "https://www.linkedin.com/company/your-company"
+linkedin: "https://www.linkedin.com/company/vayner-group"
 
 # Portfolio: each file in _portfolio/ is one project page
 collections:
